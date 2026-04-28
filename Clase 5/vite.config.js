@@ -5,9 +5,9 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: true,
-    port: 8888, // Usamos el puerto nuevo
+    port: 8888, 
     watch: {
-      usePolling: true, // ESTO ES CLAVE para Android/Termux
+      usePolling: true, 
     },
   },
 })
