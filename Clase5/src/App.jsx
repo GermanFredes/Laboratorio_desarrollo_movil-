@@ -5,7 +5,7 @@ import Persona from './Components/Funciones.jsx'
 function App() {
   return (
     <>
-    <div style: backgroudColor = red
+    <div style: Color = red
       <h1> "clase 5"</h1>
         <Persona datos ={{ 
           nombre: "Germán",
