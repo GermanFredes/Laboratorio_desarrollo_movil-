@@ -1,0 +1,125 @@
+html, body {
+    height: 100vh; 
+    width: 100vw;  
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    background-color: #ffffff;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.contenedor {
+    width: 120vw;             
+    max-width: 600px;        
+    height: 75vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background-color: #2c3e50;
+    border-top: 15px solid #2d5a88;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    overflow-y: auto;
+}
+
+.titulo {
+    color: #2d5a88;
+    font-size: 2.2rem;
+    margin: 0 0 20px 0;
+    text-align: left;
+}
+
+.controles {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.input-tarea {
+    flex: 1;
+    padding: 16px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.btn-accion {
+    padding: 16px 24px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+}
+
+.btn-agregar { background-color: #2d5a88; }
+.btn-borrar-todo { background-color: #cbd5e0; color: #000; }
+
+.lista-tareas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.tarea-item {
+    background: white;
+    padding: 20px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+}
+
+.texto-tarea {
+    font-size: 1.4rem;
+    text-align: left;
+    word-break: break-word;
+    flex: 1;
+    margin-right: 20px;
+    color: #2d3748;
+}
+
+.texto-tarea.completada {
+    text-decoration: line-through;
+    color: #a0aec0;
+}
+
+.grupo-botones {
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.btn {
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-v { background-color: #48bb78;
+         
+}
+.btn-e { background-color: #e53e3e; }
+
+@media (max-width: 768px) {
+    .contenedor { width: 95vw; height: 85vh; padding: 20px; }
+    .controles { flex-direction: column; }
+    .btn-circular { width: 50px; height: 50px; }
+}
